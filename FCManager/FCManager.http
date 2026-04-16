@@ -1,0 +1,6 @@
+@FCManager_HostAddress = http://localhost:5157
+
+GET {{FCManager_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

@@ -1,0 +1,5 @@
+<Solution>
+  <Project Path="FCManager.Domain/FullControlFootball.Domain.csproj" />
+  <Project Path="FCManager.Infra/FullControlFootball.Infrastructure.csproj" />
+  <Project Path="FCManager/FullControlFootball.Api.csproj" />
+</Solution>
