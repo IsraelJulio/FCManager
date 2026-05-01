@@ -31,3 +31,17 @@ This API provides a structured, scalable, and production-ready foundation for st
 ## 🧱 Architecture
 
 This project follows a **Clean Architecture** approach:
+## 🧱 Architecture
+
+This project follows a **Clean Architecture** approach:
+
+
+src/
+FullControlFootball.Api/
+FullControlFootball.Application/
+FullControlFootball.Domain/
+FullControlFootball.Infrastructure/
+
+tests/
+FullControlFootball.UnitTests/
+FullControlFootball.IntegrationTests/
