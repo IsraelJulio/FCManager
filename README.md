@@ -1,15 +1,22 @@
 # ⚽ Full Control Football — Backend API
 
-**Full Control Football** is a backend system designed to manage and track historical data from *EA Sports FC 25 Career Mode saves*.
+<p align="center">
+  <strong>Career Mode data tracker for EA Sports FC saves</strong>
+</p>
 
-This API provides a structured, scalable, and production-ready foundation for storing and analyzing football career data such as:
+<p align="center">
+  <img src="https://img.shields.io/badge/.NET-10-512BD4?style=for-the-badge&logo=dotnet" />
+  <img src="https://img.shields.io/badge/ASP.NET_Core-Web_API-512BD4?style=for-the-badge&logo=dotnet" />
+  <img src="https://img.shields.io/badge/PostgreSQL-Database-336791?style=for-the-badge&logo=postgresql" />
+  <img src="https://img.shields.io/badge/Architecture-Clean_Architecture-0F172A?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/Auth-JWT-000000?style=for-the-badge&logo=jsonwebtokens" />
+</p>
 
-- Seasons
-- Competitions
-- Standings
-- Top scorers
-- Top assists
-- Transfers
+---
+
+## 📌 About
+
+Full Control Football is a backend API designed to manage and track historical data from EA Sports FC Career Mode saves.
 
 ---
 
@@ -20,104 +27,63 @@ This API provides a structured, scalable, and production-ready foundation for st
 - Entity Framework Core
 - PostgreSQL
 - JWT Authentication
-- Refresh Tokens
-- Google Authentication (prepared)
 - FluentValidation
+- Swagger
 - Serilog
-- Swagger / OpenAPI
 
 ---
 
 ## 🧱 Architecture
 
-This project follows a **Clean Architecture** approach:
-## 🧱 Architecture
-
-This project follows a **Clean Architecture** approach:
-
+Clean Architecture:
 
 src/
-FullControlFootball.Api/
-FullControlFootball.Application/
-FullControlFootball.Domain/
-FullControlFootball.Infrastructure/
-
-tests/
-FullControlFootball.UnitTests/
-FullControlFootball.IntegrationTests/
-
-
-### Principles
-
-- Separation of concerns
-- Domain-driven design (DDD inspired)
-- Scalable and maintainable structure
-- Ready for vertical slice evolution
-- No business logic inside controllers
+  Api/
+  Application/
+  Domain/
+  Infrastructure/
 
 ---
-## 🧠 Core Concept
 
-All gameplay data is scoped under:
-
+## 🧠 Core Flow
 
 User → CareerSave → Season → Competition
 
+---
 
-Each **Career Save** represents an independent universe.
+## 📦 Features
+
+- Career saves
+- Seasons
+- Standings
+- Top scorers
+- Top assists
+- Transfers
 
 ---
 
-## 📦 Main Features (MVP)
+## 🔐 Auth
 
-- ✅ Career save management
-- ✅ Season tracking
-- ✅ Competition standings
-- ✅ Top scorers ranking
-- ✅ Top assists ranking
-- ✅ Transfer tracking
+- JWT
+- Refresh Tokens
+- Google login (prepared)
 
 ---
 
-## 🗂️ Domain Overview
+## 🧾 Swagger
 
-### Identity
-- User
-- UserAuthProvider
-- RefreshToken
-
-### Career Structure
-- CareerSave
-- Season
-
-### Football Base Data
-- Country
-- Competition
-- Club
-- Player
-
-### Save-specific Data
-- SaveClub
-- SavePlayer
-
-### Competitions
-- SeasonCompetition
-- CompetitionStanding
-- CompetitionStandingRow
-- CompetitionTopScorer
-- CompetitionTopAssist
-
-### Transfers
-- TransferWindow
-- TransferTransaction
+https://localhost:{port}/swagger
 
 ---
 
-## 🔐 Authentication
+## ⚙️ Run
 
-- JWT Access Token
-- Refresh Token rotation
-- Google login support (architecture ready)
+dotnet restore  
+dotnet ef database update  
+dotnet run
 
 ---
 
+## 📄 Author
+
+Israel Jhonatas
