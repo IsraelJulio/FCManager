@@ -56,4 +56,68 @@ FullControlFootball.IntegrationTests/
 - No business logic inside controllers
 
 ---
+## 🧠 Core Concept
+
+All gameplay data is scoped under:
+
+
+User → CareerSave → Season → Competition
+
+
+Each **Career Save** represents an independent universe.
+
+---
+
+## 📦 Main Features (MVP)
+
+- ✅ Career save management
+- ✅ Season tracking
+- ✅ Competition standings
+- ✅ Top scorers ranking
+- ✅ Top assists ranking
+- ✅ Transfer tracking
+
+---
+
+## 🗂️ Domain Overview
+
+### Identity
+- User
+- UserAuthProvider
+- RefreshToken
+
+### Career Structure
+- CareerSave
+- Season
+
+### Football Base Data
+- Country
+- Competition
+- Club
+- Player
+
+### Save-specific Data
+- SaveClub
+- SavePlayer
+
+### Competitions
+- SeasonCompetition
+- CompetitionStanding
+- CompetitionStandingRow
+- CompetitionTopScorer
+- CompetitionTopAssist
+
+### Transfers
+- TransferWindow
+- TransferTransaction
+
+---
+
+## 🔐 Authentication
+
+- JWT Access Token
+- Refresh Token rotation
+- Google login support (architecture ready)
+
+---
 
