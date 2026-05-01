@@ -45,3 +45,15 @@ FullControlFootball.Infrastructure/
 tests/
 FullControlFootball.UnitTests/
 FullControlFootball.IntegrationTests/
+
+
+### Principles
+
+- Separation of concerns
+- Domain-driven design (DDD inspired)
+- Scalable and maintainable structure
+- Ready for vertical slice evolution
+- No business logic inside controllers
+
+---
+
